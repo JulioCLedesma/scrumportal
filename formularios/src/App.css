@@ -49,3 +49,45 @@
   background-color: green;
   color: white;
 }
+
+.label-gray {
+  background-color: #ccc;
+  border: 1px solid #444;
+  color: #444;
+  padding: 10px;
+}
+
+
+form input[type="text"], 
+form select, 
+form textarea{
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+form select{
+  min-width: 270px;
+  max-width: 270px;
+}
+
+form input[type="submit"],
+form button{
+  display: block;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  border: rgb(1, 63, 1);
+  transition: all 300ms;
+}
+
+form input[type="submit"]:hover,
+form button:hover{
+  background-color: #9f9f9f;
+  color: gray;
+}
