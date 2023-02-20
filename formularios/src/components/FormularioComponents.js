@@ -8,6 +8,7 @@ export const FormularioComponents = () => {
         e.preventDefault();
         
         let datos = e.target;
+
         let usuario = {
             nombre: datos.nombre.value,
             apellido: datos.apellido.value,
@@ -21,27 +22,19 @@ export const FormularioComponents = () => {
     }
 
     const cambiarDatos = e =>{
-        console.log(e.target);
-        let name_del_imput = e.target.name;
+        
+        let name_del_input = e.target.name;
         let usuario_para_modificar = usuario;
 
-    if (name_del_imput === "nombre") {
+        //usuario_para_modificar[name_del_input] = e.target.value;
 
+        setUsuario(estado_previo => {
+            return {
+                ...estado_previo,
+                [name_del_input]: e.target.value
+            }
+        });
     }
-    
-    if (name_del_imput === "apellido") {
-
-    }
-
-    if (name_del_imput === "genero") {
-
-    }
-
-    if (name_del_imput === "bio") {
-
-    }
-
-
 
   return (
     <div>
