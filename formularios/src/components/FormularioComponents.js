@@ -14,6 +14,7 @@ export const FormularioComponents = () => {
             apellido: datos.apellido.value,
             genero: datos.genero.value,
             bio: datos.bio.value,
+            enviar: datos.enviar.value
         };
 
         console.log(usuario)
@@ -28,13 +29,12 @@ export const FormularioComponents = () => {
 
         //usuario_para_modificar[name_del_input] = e.target.value;
 
-        setUsuario(estado_previo => {
-            return {
-                ...estado_previo,
-                [name_del_input]: e.target.value
-            }
-        });
-    }
+            setUsuario(estado_previo => ({
+                    ...estado_previo,
+                    [name_del_input]: e.target.value
+            })
+            )
+    };
 
   return (
     <div>
@@ -42,7 +42,7 @@ export const FormularioComponents = () => {
         <h1>JULIO CESAR LEDESMA MARTINEZ</h1>
         <h2>Formularios</h2>
 
-        {usuario.bio && usuario.bio.length >=1 &&
+        {usuario.bio && 
             (
             <div className='info_Usuario label label-gray' >
                 {usuario.nombre} {usuario.apellido} es un {usuario.genero} y su Biografía es <p>{usuario.bio}</p>
@@ -62,7 +62,7 @@ export const FormularioComponents = () => {
                 
                 <textarea placeholder='Biografía' name='bio' onChange={cambiarDatos}></textarea>
             
-                <input type='submit' value='Enviar'/>
+                <input type='submit' value='Enviar' name='enviar'/>
         </form>
 
 
