@@ -1,10 +1,17 @@
-C:\Users\Julio  OneDrive/Documentos/proyectos/scrumportal/formularios
+ C:\Users\Julio  OneDrive/Documentos/proyectos/scrumportal/06-proyecto1
 
 
-arrancar terminar: npm start
+
+ejecutar nuevo proyecto app: npx create-react-app "nombre de la carpeta"
+arrancar terminal: npm start
 
 Comandos actualizar el repositorio GitHub
 >Abrir terminal nueva
+git init (esto es para uno nuevo)
+git remote add origin (https://github.com/JulioCLedesma/libroprincipito.git  esto para indicar donde)
 git add .
 git commit -m "Mesaje de actualización"
 git push origin main (nombre de la rama)
+
+
+https://github.com/JulioCLedesma/scrumportal

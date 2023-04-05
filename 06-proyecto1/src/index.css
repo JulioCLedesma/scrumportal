@@ -21,16 +21,19 @@ body {
   grid-template-rows: 100px 70px auto 70px;
 }
 
+
+
 /*Estilos cabecera*/
 .header{
   grid-area: header;
   background: white;
   text-align: left;
-  font-style: italic;
+  font-style:normal;
   display: flex;
   justify-content: center;
 }
 
+/*
 .logo {
   background: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
   width: 40px;
@@ -49,6 +52,8 @@ body {
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
 }
+*/
+
 
 .header h1{
   margin-left: 15px;

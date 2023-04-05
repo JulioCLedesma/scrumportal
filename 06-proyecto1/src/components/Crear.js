@@ -5,14 +5,14 @@ import { GuardarEnStorage } from '../helpers/GuardarEnStorage';
 
 export const Crear = () => {
 
-    const tituloComponente = "Anadir pelicula";
+    const tituloComponente = "Anadir película";
 
     const [ peliSate, setPeliState ] = useState({
         titulo: '',
         descripcion: ''
     });
 
-    const { titulo, descripcion} = peliSate;
+    const { titulo, descripcion } = peliSate;
 
     const conseguirDatosForm = e => {
         e.preventDefault();
@@ -31,8 +31,7 @@ export const Crear = () => {
         setPeliState(peli);
 
         GuardarEnStorage("pelis", peli);
-        
-             
+                    
     }   
    
 
@@ -42,7 +41,7 @@ export const Crear = () => {
         <h3 className="title">{tituloComponente}</h3>
 
         <strong>
-            {(titulo && descripcion) && "Has crecado la película: "+ titulo}
+            {(titulo && descripcion) && "Has creado la película: "+ titulo}
         </strong>
 
 

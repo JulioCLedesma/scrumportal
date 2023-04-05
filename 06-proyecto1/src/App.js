@@ -13,22 +13,29 @@ function App() {
         <div className="logo">
             <div className="play"></div>
         </div>
-        <h1>MisPelis</h1>
+        <h1>HOSPITAL GENERAL DE OCCIDENTE</h1>
+
+        <img src={"imagenes/ArbolitosHGO.jpg"}/>
+  
     </header>
 
       <nav className="nav">
           <ul>
-              <li><a href="/#">Inicio</a></li>
-              <li><a href="/#">Películas</a></li>
-              <li><a href="/#">Blog</a></li>
+             {/*} <li><a href="/#">Inicio</a></li> */}
+              <li><a href="/#">Departamento de Calidad</a></li>
+              <li><a href="/#">Farmacovigilancia</a></li>
+              <li><a href="/#">Tenovigilancia</a></li>
+              <li><a href="/#">Mantenimiento</a></li>
               <li><a href="/#">Contacto</a></li>
           </ul>
       </nav>
 
+
+
     <section id="content" className="content">
         
         
-        {/*LISTADO DE PELÍCULOAS*/}
+        {/*LISTADO DE PELÍCULAS*/}
         <Listado/>
 
 
@@ -40,10 +47,11 @@ function App() {
 
         <Crear/>
 
+
     </aside>
 
     <footer className="footer">
-        &copy; Máster en JavaScript ES12 y TypeScript 
+        &copy; Portal Web HGO-SRCUM LDSW 
     </footer>
   </div>
   );
